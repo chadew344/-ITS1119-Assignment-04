@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color:cornflowerblue;
+}
+
+#container{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    background-color: gray;
+    border: 32px solid white;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotate-circle{
+    background-color: transparent;
+    border-top: 32px solid red;
+
+}
+
+span{
+    font-size: 52px;
+    font-weight: bold;
+    color: white;   
+}
+
+.rotate-circle:hover{
+    transform: rotate(360deg);
+
+    transition: transform 3s ease-in-out;
+}
