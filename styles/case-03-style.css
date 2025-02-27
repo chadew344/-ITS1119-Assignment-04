@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#box{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    animation: flip-box 8s ease-in-out infinite alternate;
+}
+
+
+@keyframes flip-box {
+    0%, 100%{
+      background-color: blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(180deg);
+    }
+
+    25% {
+      background-color: yellow;
+      top: 0;
+      left: calc(100% - 220px);
+      transform: rotate(0);
+    }
+
+    50% {
+      background-color: red;
+      top: calc(100% - 175px);
+      left: calc(100% - 220px);
+      transform: rotate(180deg);
+    }
+
+    75% {
+      background-color: rgb(255, 0, 76);
+      top: calc(100% - 175px);
+      left: 0;
+      transform: rotate(0);
+    }
+
+    100%{
+        background-color:darkgoldenrod;
+        top: 0;
+        left: 0;
+        transform: rotate(180deg);
+    }
+  
+  }
