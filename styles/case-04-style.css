@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water-drop{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid red;
+}
+
+
+.center-drop{
+    animation: water-drop 2.5s ease-in-out infinite;
+}
+
+
+.cursor-drop {
+    position: absolute;
+    border-color: blue;
+    pointer-events: none; 
+    animation: click-drop 0.6s ease-out forwards;
+  
+}
+
+@keyframes water-drop {
+    0%{
+       /* scale: 0; */
+       opacity: 1;
+    }
+
+     100%{
+        /* scale: 10; */
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+     }
+
+     /* The demo video border-width not increasing. 
+     Since the scale property increases border-width too, 
+     I used the width and height properties individually instead of using scale.  */
+
+}
+
+@keyframes click-drop {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
