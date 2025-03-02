@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#image-slider {
+    position: relative;
+    width: 500%;
+    height: 100%;
+    margin: 0;
+    left: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    display: flex;
+    gap: 0;
+    animation: image-slider 15s ease-in-out infinite alternate;
+}
+
+#image-slider img {
+    width: 20%;
+}
+
+@keyframes image-slider {
+    0%, 15% {
+        left: -400%; 
+    }
+
+    20%, 35% {
+        left: -300%; 
+    }
+
+    40%, 55% {
+        left: -200%; 
+    }
+
+    60%, 75% {
+        left: -100%; 
+    }
+
+    80%, 100% {
+        left: 0; 
+    }
+}
