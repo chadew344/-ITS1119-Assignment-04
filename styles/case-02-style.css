@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color:cornflowerblue;
+    overflow-x: hidden;
 }
 
 #container{
@@ -20,6 +21,8 @@ body{
     border-radius: 100%;
     background-color: gray;
     border: 32px solid white;
+
+    cursor: pointer;
 
     position: absolute;
 
